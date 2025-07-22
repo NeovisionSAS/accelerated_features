@@ -11,11 +11,8 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset
-import glob
-from modules.dataset.megadepth.utils import read_megadepth_gray, read_megadepth_depth, fix_path_from_d2net
-import numpy.random as rnd
+from xfeat.modules.dataset.megadepth.utils import read_megadepth_gray, read_megadepth_depth, fix_path_from_d2net
 
-import pdb, tqdm, os
 
 
 class MegaDepthDataset(Dataset):
